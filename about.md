@@ -3,27 +3,17 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+Hey there! I'm Elsa.
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+I currently work at Blue Origin on [Blue Alchemist](https://www.blueorigin.com/news/blue-alchemist-powers-our-lunar-future), a Lunar ISRU R&D project.
 
-There are currently two themes built on Poole:
+My background is in robotics, and I have a particular interest in robotic resilency and planning despite faults.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+In 2024, I graduated with my M.S. in robotics from the University of Minnesota, where I had a fantastic time working on fault detection of the TRIDENT lunar drill under Professor Maria Gini.
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+Prior to working with Professor Gini, I spent several years researching one-shot gesture recognition for underwater robots under Professor Junaed Sattar. (And got to swim with a lot of robots in the process!) 
 
-## Setup
+I have also worked with Professor John Zimmerman at Carnege Mellon University on human responses to robot re-embodyment and personalization.
 
-Some fun facts about the setup of this project include:
+In my spare time, I like to build and fly high-powered rockets. 
 
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!

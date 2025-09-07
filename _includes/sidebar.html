@@ -3,7 +3,7 @@
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
 <!-- Toggleable sidebar -->
-<div class="sidebar" id="sidebar">
+<div class="sidebar" id="sidebar" style="background-image: url('{{ '/public/mooncolor.jpg' | absolute_url }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
   <div class="sidebar-item">
     <p>{{ site.description }}</p>
   </div>
@@ -25,8 +25,8 @@
       {% endif %}
     {% endfor %}
 
-    <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a> -->
+    <!-- <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a> -->
+    <a class="sidebar-nav-item" href=https://www.linkedin.com/in/elsa-forberger/>Linked-In</a> -->
     <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
   </nav>
 

@@ -1,55 +1,196 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE HTML>
 
-<div class="intro">
-  <img src="{{ '/public/headshot.jpeg' | absolute_url }}" alt="Elsa's headshot" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; object-position: center 30%; display: block; margin: 0 auto 20px auto;">
-  <p>Hey there! I'm Elsa.</p>
-  
-  
-  <p>I currently work at Blue Origin on <a href="https://www.blueorigin.com/news/blue-alchemist-powers-our-lunar-future">Blue Alchemist</a>, a Lunar ISRU R&D project.</p>
-  
-  <p>My background is in robotics, and I have a particular interest in robotic resilency and planning despite faults.</p>
-  
-  <p>In 2024, I graduated with my M.S. in robotics from the University of Minnesota, where I had a fantastic time working on fault detection of the TRIDENT lunar drill under Professor Maria Gini.</p>
-  
-  <p>Prior to working with Professor Gini, I spent several years researching one-shot gesture recognition for underwater robots under Professor Junaed Sattar. (And got to swim with a lot of robots in the process!)</p>
-  
-  <p>I have also worked with Professor John Zimmerman at Carnege Mellon University on human responses to robot re-embodyment and personalization.</p>
-  
-  <p>In my spare time, I like to build and fly high-powered rockets.</p>
-</div>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | absolute_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+    <title>Elsa Forberger</title>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <meta name="author" content="Elsa Forberger">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Elsa Forberger
+                </p>
+                <p>
+                I'm a software engineer at Blue Origin working on <a href="https://www.blueorigin.com/news/blue-alchemist-hits-major-milestone-toward-permanent-sustainable-lunar-infrastructure">Blue Alchemist</a>, a In-Situ Resource Utilization (ISRU) initiative to produce oxygen and solar panels from lunar regolith. My work involves everything from robotics and controls to sensor calibration and testing.
+                <br><br>
+                Before joining Blue Origin, I did my B.S. in Computer Science and M.S. in Robotics at the University of Minnesota, where I was advised by <a href="https://www-users.cse.umn.edu/~gini/">Professor Maria Gini</a> in the <a href="https://nextgenai.umn.edu/">Next Generation Robotics Lab</a>. I also spent some time in the <a href="https://irvlab.cs.umn.edu/">Interactive Robotics and Vision Lab</a> working on dynamic gesture recognition for AUVs under <a href="https://junaedsattar.cs.umn.edu/">Professor Junaed Sattar</a>.
+                <br><br>
+                I'm interested in robust, adaptive control to address changes in capability arising from robot degradation, and how those capabilites can inform high level task selection and planning for a wider multi-agent team. 
+                </p>
+                </p>
+                <p style="text-align:center">
+                  <!-- <a href="mailto:jonbarron@gmail.com">Email</a> &nbsp;/&nbsp; -->
+                  <a href="https://orcid.org/0009-0003-7686-1771">Orchid</a> &nbsp;/&nbsp;
+                  <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/jonbarron/">Github</a> -->
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <a href="images/headshot.jpeg"><img style="width:100%;max-width:100%;object-fit: fill; border-radius: 50%;" alt="profile photo" src="images/headshot.jpeg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Interests</h2>
+                <p>
+                  I'm interested in robust, adaptive control to address changes in capability arising from robot degradation, and how those capabilites can inform high level task selection and planning for a wider multi-agent team. 
+                </p>
+              </td>
+            </tr>
+          </tbody></table> -->
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+             <h2 style="padding:16px">Publications and Presentations</h2>
+
+    <tr>
+      <td style="padding:16px;width:30%;vertical-align:middle">
+        <img src='images/trident.png' width=100%>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://ntrs.nasa.gov/api/citations/20250006155/downloads/1_Fast_Vibration_Based_Autonom.pdf">
+          <span class="papertitle">Fast Vibration-Based Autonomous Fault Detection for Extraterrestrial Drills</span>
+        </a>
+        <br>
+        E. Forberger, S. Boelter, B. Glass, M. Gini
+        <br>
+        <em>RSS Workshop on Resource Constrained Systems</em>, 2025
+        <br>
+        <p></p>
+        <p>
+		    Vibration based fault detection for the TRIDENT lunar drill using a novel clustering-based beat identification method.
+        </p>
+      </td>
+    </tr>
+	
+    <tr>
+      <td style="padding:16px;width:30%;vertical-align:middle">
+        <img src='images/trident_on_rover.png' width=100%>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://ntrs.nasa.gov/api/citations/20250003932/downloads/ICRA_FR_Concept_Boelter.pdf">
+          <span class="papertitle">A Concept for Planetary Drilling Autonomy</span>
+        </a>
+        <br>
+        S. Boelter, E. Temesgen, G. Brown, E. Forberger, B. Glass, M. Gini
+        <br>
+        <em>2025 ICRA Workshop on Field Robotics</em>, 2025
+        <br>
+        <p></p>
+        <p>
+		    Application of subspace analysis and markov decision processes to perform online fault detection and avoidance.
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:16px;width:30%;vertical-align:middle">
+        <img src='images/tent.jpg' width=100%>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://ntrs.nasa.gov/api/citations/20250004534/downloads/ICECOMM_POSTER-2.pdf">
+          <span class="papertitle">Abstract: Autonomy and Arctic Analog Testing for Planetary Drills</span>
+        </a>
+        <br>
+        S. Boelter, E. Forberger, L. Weber, B. Glass, M. Gini
+        <br>
+        <em>4th Ice Core Community Meeting (ICECOMM)</em>, 2025
+        <br>
+        <p></p>
+        <p>
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:16px;width:30%;vertical-align:middle">
+        <img src='images/mooncolor.jpg' width=100%>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://dl.acm.org/doi/10.1145/3461778.3462036">
+          <span class="papertitle">Social Robots in Service Contexts: Exploring the Rewards and Risks of Personalization and Re-embodiment</span>
+        </a>
+        <br>
+        S. Reig, M. Luria, E. Forberger, I. Won, A. Steinfeld, J. Forlizzi, J. Zimmerman
+        <br>
+        <em>ACM Conference on Designing Interactive Systems</em>, 2021
+        <br>
+        <p></p>
+        <p>
+		    Characterization of human responses to personalization (tailoring of service to person based on prior knowledge) and re-embodiment (Movement of agent "mind" between different physical bodies to perform multiple roles).
+        </p>
+      </td>
+    </tr>
+
+          </tbody></table>
+
+          
+					<table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+            <tr>
+              <td>
+                <h2>Miscellanea</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #aaba9e;">
+								 <h2>Articles</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:center">
+                <a href="https://wipac.wisc.edu/multimessenger-astronomy-and-cosmic-ray-detectors-in-another-great-wipac-quarknet-internship/">Internship at WIPAC, 2017</a><br>				  
+                <a href="https://cse.umn.edu/cs/news/cspotlight-testament-strong-mentorship">Spotlight Article, 2020</a><br>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #edd892;">
+								 <h2>Teaching</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:center">
+                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
+                <br>
+                <a href="https://rkt.aem.umn.edu/history">Graduate Mentor for UMN Rocket Team, 2023-2025</a>
+                <br>
+                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
+              </td>
+            </tr>
+            
+          <!-- </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
+                </p>
+              </td>
+            </tr>
+          </tbody></table> -->
+        </td>
+      </tr>
+    </table>
+  </body>
+
+</html>

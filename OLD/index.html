@@ -1,0 +1,55 @@
+---
+layout: default
+title: Home
+---
+
+<div class="intro">
+  <img src="{{ '/public/headshot.jpeg' | absolute_url }}" alt="Elsa's headshot" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; object-position: center 30%; display: block; margin: 0 auto 20px auto;">
+  <p>Hey there! I'm Elsa.</p>
+  
+  
+  <p>I currently work at Blue Origin on <a href="https://www.blueorigin.com/news/blue-alchemist-powers-our-lunar-future">Blue Alchemist</a>, a Lunar ISRU R&D project.</p>
+  
+  <p>My background is in robotics, and I have a particular interest in robotic resilency and planning despite faults.</p>
+  
+  <p>In 2024, I graduated with my M.S. in robotics from the University of Minnesota, where I had a fantastic time working on fault detection of the TRIDENT lunar drill under Professor Maria Gini.</p>
+  
+  <p>Prior to working with Professor Gini, I spent several years researching one-shot gesture recognition for underwater robots under Professor Junaed Sattar. (And got to swim with a lot of robots in the process!)</p>
+  
+  <p>I have also worked with Professor John Zimmerman at Carnege Mellon University on human responses to robot re-embodyment and personalization.</p>
+  
+  <p>In my spare time, I like to build and fly high-powered rockets.</p>
+</div>
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url | absolute_url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>

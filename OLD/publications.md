@@ -2,6 +2,7 @@
 layout: page
 title: Publications and Presentations
 ---
+ORCHID ID: https://orcid.org/0009-0003-7686-1771
 
 **Fast Vibration-Based Autonomous Fault Detection for Extraterrestrial Drills** \\
 E. Forberger, S. Boelter, B. Glass, M. Gini \\
